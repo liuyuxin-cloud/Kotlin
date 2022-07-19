@@ -55,3 +55,15 @@ fun <A, B> Array<A>.corresponds(that: Array<B>, p: (A, B) -> Boolean) : Boolean 
  *  }
  *}
  */
+
+fun function1() {
+    for(i in 1.. 10 step 2) print(i)
+    for(i in 10 downTo 1 step 2) print(i)
+    for(i in 1 until 10) print(i)
+}
+
+class Person {
+    infix fun called(name: String) {
+        println("My name is ${name}.")
+    }
+}
